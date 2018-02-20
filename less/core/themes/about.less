@@ -1,0 +1,42 @@
+@media (min-width: @screen-md-min) {
+  .about {
+    .about-info {
+      .background-about {
+        display: inline-block;
+        background-color: #f3f3f3;
+        width: 250%;
+        margin-left: -100%;
+        .p-background {
+          padding: 39px 0;
+          margin-left: 40%;
+          margin-right: 27%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-md-max) {
+  .about {
+    .about-info {
+      .background-about {
+        display: inline-block;
+        background-color: #f3f3f3;
+      }
+    }
+  }
+}
+
+.about-image {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 560px;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+}

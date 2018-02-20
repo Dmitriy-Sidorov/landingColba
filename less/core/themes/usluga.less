@@ -1,0 +1,44 @@
+.usluga {
+  position: absolute;
+  top: 0;
+  > p {
+    margin: 0;
+    padding: 38px 24px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 43px;
+    font-family: Roboto-Medium;
+  }
+}
+.usluga-img {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 331px;
+  .blur {
+    background-color: rgba(0,0,0,0.65);
+    height: 1000px;
+    width: 1000px;
+    z-index: 5;
+    position: absolute;
+  }
+  .caption {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 0.45s ease-in-out;
+    -moz-transition: all 0.45s ease-in-out;
+    -o-transition: all 0.45s ease-in-out;
+    -ms-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+  }
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.usluga-img:hover .caption {
+  opacity:1;
+}
